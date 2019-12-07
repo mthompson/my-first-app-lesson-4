@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>Lesson 4 My First App</h1>
+    <h2>Author: billyblackjack</h2>
+    <h3 id="header-date"></h3>
+    <hr style="width: 100%; border:1px solid red;">
+    <p>
+      <span id="player_username">Not Set</span>
+      <br />
+      <button onclick="setHeaderDate()">Set Date</button>
+      <button style="color:white;background-color:green;border:1px solid green"
+        onclick="clickMe()">Start Game</button>
+      <button style="color:white;background-color:blue;border:1px solid blue"
+      onclick="talk()">Talk</button>
+      <button style="color:white;background-color:red;border:1px solid red"
+      onclick="moveGamePlayer()">Move</button>
+    </p>
+    <div id="container" style="width: 480px; height: 320px; position: relative; background: white;">
+      <div id="game-player" 
+      style="width:96px;height:96px;position:absolute;background-color:orange; top:200px; left:200px;background-image:url('https://imgur.com/download/LFUsWy4');background-size:96px 96px"></div>
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
